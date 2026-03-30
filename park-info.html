@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sanjalika Water Park - Ultimate entertainment destination with thrilling water rides, largest swimming pools, and family fun">
+    <meta name="keywords" content="water park, rides, swimming pool, family entertainment, water slides, Sanjalika">
+    <title>Park-info: Sanjalika Water Park | Ultimate Water Entertainment</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <!-- <div id="preloader">
+        <div class="wave-loader">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <p class="loading-text">Loading Paradise...</p>
+    </div> -->
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-water"></i>
+                <span class="brand-text">SANJALIKA</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rides.html">Rides & Slides</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="park-info.html">Park Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="food.html">Food Zone</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="location.html">Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-book" href="#" data-bs-toggle="modal" data-bs-target="#bookingModal">Book
+                            Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-10">
+                        <h1 class="hero-title" data-aos="fade-down" data-aos-duration="1000">
+                            <span class="highlight">Park</span> Info
+                        </h1>
+                        <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+                            Our Water Park is a fun place where people of all ages can enjoy exciting rides, big slides,
+                            wave pools, and relaxing water areas. It is perfect for families and friends to cool down,
+                            have fun, and make happy memories in a safe and clean environment.
+                        </p>
+                        <div class="hero-buttons" data-aos="zoom-in" data-aos-delay="400">
+                            <a href="#" class="btn btn-primary-custom me-3" data-bs-toggle="modal"
+                                data-bs-target="#bookingModal">
+                                <i class="fas fa-ticket-alt me-2"></i>Book Now
+                            </a>
+                            <a href="#rides" class="btn btn-outline-custom">
+                                <i class="fas fa-arrow-down me-2"></i>Explore Rides
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+            </a>
+        </div>
+        <!-- Animated Water Waves -->
+        <div class="water-waves">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(0,191,255,0.7)" />
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(0,191,255,0.5)" />
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(0,191,255,0.3)" />
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(255,255,255,1)" />
+                </g>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Park Information Section -->
+    <section id="park-info" class="park-info-section section-padding">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Park <span class="highlight">Information</span></h2>
+                <p class="section-description">Everything you need to know before your visit</p>
+            </div>
+            <div class="row g-4">
+                <!-- Timing Card -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Opening Hours</h4>
+                        <div class="info-details">
+                            <p><strong>Monday - Friday:</strong> 10:00 AM - 7:00 PM</p>
+                            <p><strong>Saturday - Sunday:</strong> 9:00 AM - 8:00 PM</p>
+                            <p><strong>Holidays:</strong> 9:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pricing Card -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-ticket-alt"></i>
+                        </div>
+                        <h4>Ticket Pricing</h4>
+                        <div class="info-details">
+                            <p><strong>Adults:</strong> $45 per person</p>
+                            <p><strong>Children (3-12 years):</strong> $30 per person</p>
+                            <p><strong>Senior Citizens:</strong> $35 per person</p>
+                            <p><strong>Group (10+):</strong> 20% discount</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Facilities Card -->
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4>Facilities</h4>
+                        <div class="info-details">
+                            <p><i class="fas fa-check"></i> Free Parking</p>
+                            <p><i class="fas fa-check"></i> Lockers Available</p>
+                            <p><i class="fas fa-check"></i> Changing Rooms</p>
+                            <p><i class="fas fa-check"></i> First Aid Center</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Booking Form -->
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up">
+                    <div class="booking-form-container">
+                        <h3 class="text-center mb-4">Quick Booking</h3>
+                        <form id="quickBookingForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="bookName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="bookName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="bookEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="bookEmail" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="bookPhone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="bookPhone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="bookDate" class="form-label">Visit Date</label>
+                                    <input type="date" class="form-control" id="bookDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="bookAdults" class="form-label">Number of Adults</label>
+                                    <input type="number" class="form-control" id="bookAdults" min="0" value="2"
+                                        required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="bookChildren" class="form-label">Number of Children</label>
+                                    <input type="number" class="form-control" id="bookChildren" min="0" value="0">
+                                </div>
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary-custom btn-lg">
+                                        <i class="fas fa-calendar-check me-2"></i>Book Now
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-about">
+                        <h4 class="footer-title">
+                            <i class="fas fa-water"></i> Sanjalika Water Park
+                        </h4>
+                        <p>Experience the ultimate water adventure with thrilling rides, massive pools, and
+                            unforgettable family fun. Your perfect day starts here!</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Quick Links</h5>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#rides">Rides</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-links">
+                        <h5 class="footer-title">Information</h5>
+                        <ul>
+                            <li><a href="#park-info">Park Info</a></li>
+                            <li><a href="#food">Food Zone</a></li>
+                            <li><a href="#">Safety Rules</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-contact">
+                        <h5 class="footer-title">Contact Info</h5>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Water Park Avenue</li>
+                            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@sanjalikapark.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Sanjalika Water Park. All Rights Reserved. | Designed with <i class="fas fa-heart"></i>
+                    for Adventure</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="scroll-top-btn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Booking Modal -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">
+                        <i class="fas fa-ticket-alt me-2"></i>Book Your Tickets
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="modalBookingForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="modalName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="modalName" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="modalEmail" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="modalEmail" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="modalPhone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="modalPhone" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="modalDate" class="form-label">Visit Date *</label>
+                                <input type="date" class="form-control" id="modalDate" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="modalAdults" class="form-label">Adults</label>
+                                <input type="number" class="form-control" id="modalAdults" min="0" value="2">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="modalChildren" class="form-label">Children</label>
+                                <input type="number" class="form-control" id="modalChildren" min="0" value="0">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="modalSeniors" class="form-label">Seniors</label>
+                                <input type="number" class="form-control" id="modalSeniors" min="0" value="0">
+                            </div>
+                            <div class="col-12">
+                                <label for="modalSpecialRequests" class="form-label">Special Requests</label>
+                                <textarea class="form-control" id="modalSpecialRequests" rows="3"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <div class="booking-summary">
+                                    <h6>Booking Summary</h6>
+                                    <p class="mb-1">Total Amount: <strong id="totalAmount">$90.00</strong></p>
+                                    <small class="text-muted">Price calculated based on selected tickets</small>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="submit" form="modalBookingForm" class="btn btn-primary-custom">
+                        <i class="fas fa-check me-2"></i>Confirm Booking
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Modal -->
+    <div class="modal fade" id="galleryModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <img src="" alt="Gallery Image" id="modalImage" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- AOS Animation -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
